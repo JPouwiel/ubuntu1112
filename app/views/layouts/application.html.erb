@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DOODLER APP | <%= @title %></title>
+    <title><%= title %></title>
     <%= csrf_meta_tag %>
+    <%= render 'layouts/stylesheets' %>
   </head>
   <body class="front-page logged-out">
     <!-- START DIV DOC -->
     <div id="doc">
       <%= yield %>
+      <%= render 'layouts/footer' %>
       </div>
       <!-- END DIV DOC -->
   </body>

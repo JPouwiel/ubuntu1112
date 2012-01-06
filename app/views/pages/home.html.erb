@@ -3,7 +3,7 @@
           <div id="front-container" class="js-front-container">
             <!-- START DIV LEFTSIDE -->  
             <div class="leftside">
-              <h1>Twitter</h1>
+              <h1>Doodler</h1>
               <h2>Follow your interests</h2>
               <p>Instant updates from your iFriends, industry experts, favorite celebrities, and what&#8217;s happening around the world.</p>
             </div>
@@ -12,14 +12,15 @@
             <!-- START DIV RIGHTSIDE -->
             <div class="rightside">
               <div class="front-signup js-front-signup">
-                <h3>New to Twitter? <em>Join today!</em></h3>
-                <form action="https://twitter.com/signup" class="signup signup-btn" method="post">
-                  <input type="hidden" value="front" name="context" />
-                  <input type="submit" class="promotional submit button" value="Sign up" />
-                </form>
+                <h3>New to doodler? <em>Join today!</em></h3>
+                <%= form_tag('https://twitter.com/signup', :class => "signup signup-btn", :multipart => false, :method => :post) do -%>
+                  <%= submit_tag 'context', :type => "hidden", :name => "context" %>
+                  <%= submit_tag 'Sign up', :class => "promotional submit button" %>
+                <% end -%>
               </div>
             </div>
             <!-- END DIV RIGHTSIDE -->
+
             <!-- START DIV BOTTOMPART -->
             <div class="bottompart">
               <div class="footer inline-list">
@@ -32,11 +33,6 @@
               </div>
             </div>
             <!-- END DIV BOTTOMPART -->
-  
           </div>
-
         </div>
         <!-- END DIV PAGE-OUTER -->
-        <div class="homepage-gradient"></div>
-        <div class="homepage-gold-bar"></div>
-        <div id="message-notifications"></div>
