@@ -12,8 +12,8 @@
             <!-- START DIV RIGHTSIDE -->
             <div class="rightside">
               <div class="front-signup js-front-signup">
-                <h3>New to doodler? <em>Join today!</em></h3>
-                <%= form_tag('https://twitter.com/signup', :class => "signup signup-btn", :multipart => false, :method => :post) do -%>
+                <h3>New to doodler? <em>&nbsp;&nbsp;&nbsp;Y U No Signup?!</em></h3>
+                <%= form_tag('/signup', :class => "signup signup-btn", :multipart => false, :method => :post) do -%>
                   <%= submit_tag 'context', :type => "hidden", :name => "context" %>
                   <%= submit_tag 'Sign up', :class => "promotional submit button" %>
                 <% end -%>
@@ -25,9 +25,9 @@
             <div class="bottompart">
               <div class="footer inline-list">
                 <ul>
-                  <li><a href="about.html">About</a><span class="dot divider"> &middot;</span></li>
-                  <li><a href="help.html">Help</a><span class="dot divider"> &middot;</span></li>
-                  <li><a href="contact.html">Contact</a><span class="dot divider"> &middot;</span></li>
+                  <li><%= link_to "About", about_path %><span class="dot divider"> &middot;</span></li>
+                  <li><%= link_to "Help", help_path %><span class="dot divider"> &middot;</span></li>
+                  <li><%= link_to "Contact", contact_path %><span class="dot divider"> &middot;</span></li>
                   <li><span class="copyright">&copy; 2012 doodler</span></li>
                 </ul>
               </div>
