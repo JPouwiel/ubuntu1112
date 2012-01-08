@@ -10,6 +10,7 @@
     <div id="doc">
       <%= yield %>
       <%= render 'layouts/footer' %>
+      <%= debug(params) if Rails.env.development?  %>
       </div>
       <!-- END DIV DOC -->
   </body>

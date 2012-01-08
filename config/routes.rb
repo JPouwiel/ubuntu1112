@@ -1,6 +1,6 @@
 Ubuntu1112::Application.routes.draw do
 ## Users controller
-  get "users/new"
+  resources :users
   match '/signup', :to => 'users#new'
 
 ## Pages controller
