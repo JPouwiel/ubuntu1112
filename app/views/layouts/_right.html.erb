@@ -1,0 +1,11 @@
+            <!-- START DIV RIGHTSIDE -->
+            <div class="rightside">
+              <div class="front-signup js-front-signup">
+                <h3>New to doodler? <em>&nbsp;&nbsp;&nbsp;Y U No Signup?!</em></h3>
+                <%= form_tag('/signup', :class => "signup signup-btn", :multipart => false, :method => :post) do -%>
+                  <%= submit_tag 'context', :type => "hidden", :name => "context" %>
+                  <%= submit_tag 'Sign up', :class => "promotional submit button" %>
+                <% end -%>
+              </div>
+            </div>
+            <!-- END DIV RIGHTSIDE -->

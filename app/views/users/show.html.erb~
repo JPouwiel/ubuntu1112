@@ -1,4 +1,25 @@
-<h1>
-  <%= gravatar_for @user, :size => 100 %>
-  <%= @user.name %>
-</h1>
+        <!-- START DIV PAGE-OUTER -->
+        <div id="page-outer" >
+          <div id="front-container" class="js-front-container">
+            <%= render 'layouts/content' %>
+
+
+            <%= render 'layouts/bottom' %>
+          </div>
+        </div>
+        <!-- END DIV PAGE-OUTER -->
+
+
+
+<!-- <table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+
+    </td>
+    <td class="sidebar round">
+
+    </td>
+  </tr>
+</table> -->
+
+
