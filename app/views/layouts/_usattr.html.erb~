@@ -1,0 +1,8 @@
+            <!-- START DIV USATTR -->
+            <div class="rightside">
+              <div class="front-signup js-front-signup">
+                <h3><%= @user.name %></h3>
+                <p><em>&nbsp;&nbsp;&nbsp; <%= link_to user_path(@user), @user %></em></p>
+              </div>
+            </div>
+            <!-- END DIV USATTR -->

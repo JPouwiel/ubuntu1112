@@ -26,18 +26,18 @@ describe UsersController do
 
     it "should have the user's name" do
       get :show, :id => @user
-      response.should have_selector('h1', :content => @user.name)
+      response.should have_selector('h2', :content => @user.name)
     end
 
     it "should have a profile image" do
       get :show, :id => @user
-      response.should have_selector('h1>img', :class => "gravatar")
+      response.should have_selector('h2>img', :class => "gravatar")
     end
 
     it "should have the right url" do
     get :show, :id => @user
-    response.should have_selector('td>a', :content => user_path(@user),
-                                          :href    => user_path(@user))
+    response.should have_selector('em>a', :content => user_path(@user),
+                                           :href    => user_path(@user))
     end
   end
 
